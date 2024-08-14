@@ -41,12 +41,19 @@ definitions:
   dto.UpdateProductDto:
     properties:
       description:
+        maxLength: 5000
+        minLength: 0
         type: string
       name:
+        maxLength: 255
+        minLength: 0
         type: string
       price:
+        minimum: 0
         type: number
       productId:
+        maxLength: 255
+        minLength: 0
         type: string
     required:
     - description

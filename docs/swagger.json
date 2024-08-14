@@ -235,16 +235,23 @@
             ],
             "properties": {
                 "description": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 5000,
+                    "minLength": 0
                 },
                 "name": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 255,
+                    "minLength": 0
                 },
                 "price": {
-                    "type": "number"
+                    "type": "number",
+                    "minimum": 0
                 },
                 "productId": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 255,
+                    "minLength": 0
                 }
             }
         }

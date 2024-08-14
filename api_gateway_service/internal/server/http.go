@@ -1,11 +1,12 @@
 package server
 
 import (
+	"strings"
+	"time"
+
 	"github.com/AleksK1NG/cqrs-microservices/docs"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"strings"
-	"time"
 
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
